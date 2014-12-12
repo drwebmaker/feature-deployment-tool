@@ -1,0 +1,25 @@
+/**
+ *  SOLO FORM MODULE
+ *
+ *  form which is the only element on the page, e.g. login and signup forms
+ *
+ *  .solo-form
+ *    &__title
+ *
+ */
+.solo-form {
+  width: $global-baseline * 32;
+  padding: $global-baseline * 3.9;
+
+  border-radius: $global-border-radius;
+  background: white;
+  box-shadow: 0 1px 2px rgba(black, 0.15);
+
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: $global-baseline * 3;
+
+    text-align: center;
+  }
+}

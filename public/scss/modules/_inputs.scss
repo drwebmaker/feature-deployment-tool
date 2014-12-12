@@ -1,0 +1,389 @@
+$input-search-magnifier: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2216px%22%20height%3D%2216px%22%20%20viewBox%3D%220%200%2016%2016%22%20enable-background%3D%22new%200%200%2016%2016%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3Etopic-discussions%201%3C%2Ftitle%3E%3Cdescription%3ECreated%20with%20Sketch%20(http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch)%3C%2Fdescription%3E%3Cg%20id%3D%22topic-discussions%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22Search-box%22%20transform%3D%22translate(-211.000000%2C%20-286.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20transform%3D%22translate(200.000000%2C%20279.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cpath%20id%3D%22Oval-9%22%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23949494%22%20d%3D%22M22.011%2C19.14c-1.158%2C0.915-2.621%2C1.46-4.211%2C1.46%20%20%20%20c-3.755%2C0-6.8-3.044-6.8-6.8c0-3.755%2C3.044-6.8%2C6.8-6.8c3.756%2C0%2C6.8%2C3.044%2C6.8%2C6.8c0%2C1.59-0.545%2C3.053-1.46%2C4.211%20%20%20%20c0.015%2C0.013%2C0.027%2C0.024%2C0.041%2C0.038l3.171%2C3.171c0.391%2C0.391%2C0.387%2C1.023-0.005%2C1.416l0.289-0.289%20%20%20%20c-0.39%2C0.39-1.026%2C0.394-1.416%2C0.005l-3.171-3.171C22.035%2C19.167%2C22.023%2C19.154%2C22.011%2C19.14z%20M17.8%2C19%20%20%20%20c2.872%2C0%2C5.2-2.328%2C5.2-5.2c0-2.872-2.328-5.2-5.2-5.2c-2.872%2C0-5.2%2C2.328-5.2%2C5.2C12.6%2C16.672%2C14.928%2C19%2C17.8%2C19z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+$input-website-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-305.5%20396.5%2024%2024%22%20enable-background%3D%22new%20-305.5%20396.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cline%20fill%3D%22none%22%20stroke%3D%22%23449FDB%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%220%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%23949494%22%20d%3D%22M-293.5%2C401.499c-3.86%2C0-7%2C3.141-7%2C7.001c0%2C3.861%2C3.14%2C7.001%2C7%2C7.001s7-3.14%2C7-7.001%20C-286.5%2C404.64-289.64%2C401.499-293.5%2C401.499z%20M-287.529%2C408.5c0%2C1.366-0.464%2C2.625-1.237%2C3.632%20c-0.218-0.171-0.451-0.633-0.232-1.11c0.221-0.482%2C0.278-1.598%2C0.228-2.029c-0.048-0.433-0.273-1.478-0.886-1.488%20c-0.611-0.009-1.03-0.209-1.393-0.936c-0.754-1.507%2C1.414-1.796%2C0.66-2.631c-0.21-0.234-1.3%2C0.965-1.459-0.634%20c-0.011-0.115%2C0.099-0.286%2C0.245-0.464C-289.238%2C403.635-287.529%2C405.87-287.529%2C408.5L-287.529%2C408.5z%20M-294.32%2C402.589%20c-0.143%2C0.277-0.519%2C0.392-0.749%2C0.601c-0.499%2C0.451-0.712%2C0.389-0.981%2C0.821c-0.27%2C0.435-1.142%2C1.057-1.142%2C1.371%20c0%2C0.312%2C0.441%2C0.683%2C0.661%2C0.61s0.801-0.068%2C1.142%2C0.052c0.342%2C0.12%2C2.854%2C0.241%2C2.053%2C2.366c-0.254%2C0.674-1.365%2C0.562-1.661%2C1.679%20c-0.045%2C0.164-0.198%2C0.865-0.209%2C1.095c-0.017%2C0.354%2C0.251%2C1.69-0.091%2C1.69c-0.343%2C0-1.266-1.195-1.266-1.412%20c0-0.216-0.241-0.977-0.241-1.626s-1.105-0.64-1.105-1.504c0-0.779%2C0.6-1.167%2C0.465-1.54c-0.133-0.372-1.186-0.386-1.626-0.431%20C-298.303%2C404.37-296.497%2C402.891-294.32%2C402.589L-294.32%2C402.589z%20M-295.377%2C414.166c0.358-0.189%2C0.395-0.435%2C0.72-0.448%20c0.372-0.015%2C0.675-0.145%2C1.093-0.236c0.372-0.081%2C1.038-0.458%2C1.624-0.506c0.494-0.041%2C1.47%2C0.024%2C1.732%2C0.502%20c-0.945%2C0.627-2.077%2C0.992-3.292%2C0.992C-294.156%2C414.47-294.787%2C414.361-295.377%2C414.166L-295.377%2C414.166z%22%2F%3E%3C%2Fsvg%3E');
+$input-facebook-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-305.5%20396.5%2024%2024%22%20enable-background%3D%22new%20-305.5%20396.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23949494%22%20d%3D%22M-289.612%2C403.935h-2.22c-0.264%2C0-0.556%2C0.345-0.556%2C0.809v1.602h2.776v2.287h-2.776v6.868h-2.623v-6.867%20h-2.378v-2.288h2.378v-1.344c0-1.931%2C1.339-3.501%2C3.177-3.501h2.222V403.935z%22%2F%3E%3C%2Fsvg%3E');
+$input-linkedin-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-305.5%20396.5%2024%2024%22%20enable-background%3D%22new%20-305.5%20396.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cline%20fill%3D%22none%22%20stroke%3D%22%23449FDB%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%220%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%23949494%22%20d%3D%22M-297.33%2C403.095c0%2C0.825-0.611%2C1.496-1.614%2C1.496c-0.945%2C0-1.556-0.671-1.556-1.496%20c0-0.849%2C0.631-1.497%2C1.595-1.497C-297.94%2C401.599-297.349%2C402.247-297.33%2C403.095z%20M-300.421%2C415.401v-9.629h2.993v9.629H-300.421z%20%20M-295.636%2C408.845c0-1.201-0.039-2.205-0.079-3.072h2.599l0.14%2C1.34h0.058c0.394-0.632%2C1.358-1.555%2C2.973-1.555%20c1.968%2C0%2C3.445%2C1.318%2C3.445%2C4.154v5.689h-2.991v-5.336c0-1.24-0.435-2.087-1.517-2.087c-0.827%2C0-1.318%2C0.569-1.535%2C1.12%20c-0.08%2C0.198-0.099%2C0.473-0.099%2C0.749v5.551h-2.992L-295.636%2C408.845L-295.636%2C408.845z%22%2F%3E%3C%2Fsvg%3E');
+$input-twitter-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-305.5%20396.5%2024%2024%22%20enable-background%3D%22new%20-305.5%20396.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cline%20fill%3D%22none%22%20stroke%3D%22%23449FDB%22%20x1%3D%22-301.647%22%20y1%3D%22401.22%22%20x2%3D%22-301.647%22%20y2%3D%22401.22%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%23949494%22%20d%3D%22M-286.5%2C404.158c-0.515%2C0.229-1.069%2C0.384-1.651%2C0.453c0.593-0.356%2C1.048-0.919%2C1.263-1.59%20c-0.555%2C0.329-1.17%2C0.567-1.823%2C0.697c-0.525-0.558-1.272-0.905-2.098-0.905c-1.586%2C0-2.872%2C1.284-2.872%2C2.871%20c0%2C0.225%2C0.026%2C0.444%2C0.076%2C0.653c-2.386-0.118-4.503-1.263-5.918-2.999c-0.247%2C0.424-0.39%2C0.916-0.39%2C1.442%20c0%2C0.997%2C0.507%2C1.877%2C1.278%2C2.392c-0.471-0.016-0.914-0.145-1.301-0.358c0%2C0.011%2C0%2C0.021%2C0%2C0.034c0%2C1.391%2C0.99%2C2.553%2C2.303%2C2.816%20c-0.24%2C0.065-0.495%2C0.1-0.757%2C0.1c-0.186%2C0-0.364-0.018-0.541-0.051c0.365%2C1.142%2C1.426%2C1.971%2C2.682%2C1.995%20c-0.982%2C0.771-2.221%2C1.229-3.567%2C1.229c-0.231%2C0-0.46-0.016-0.685-0.04c1.271%2C0.813%2C2.78%2C1.288%2C4.402%2C1.288%20c5.284%2C0%2C8.171-4.375%2C8.171-8.17c0-0.125-0.002-0.248-0.009-0.372C-287.374%2C405.239-286.887%2C404.732-286.5%2C404.158L-286.5%2C404.158%20L-286.5%2C404.158z%22%2F%3E%3C%2Fsvg%3E');
+$input-googleplus-icon: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-305.5%20396.5%2024%2024%22%20enable-background%3D%22new%20-305.5%20396.5%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cline%20fill%3D%22none%22%20stroke%3D%22%23449FDB%22%20x1%3D%22-301.238%22%20y1%3D%22400.728%22%20x2%3D%22-301.238%22%20y2%3D%22400.728%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%23949494%22%20d%3D%22M-299.394%2C405.168c0%2C1.068%2C0.357%2C1.842%2C1.061%2C2.296c0.577%2C0.371%2C1.247%2C0.427%2C1.594%2C0.427%20c0.084%2C0%2C0.151-0.004%2C0.199-0.008c0%2C0-0.11%2C0.719%2C0.423%2C1.429h-0.024c-0.923%2C0-3.935%2C0.194-3.935%2C2.67%20c0%2C2.518%2C2.766%2C2.646%2C3.32%2C2.646c0.043%2C0%2C0.068-0.001%2C0.068-0.001c0.007%2C0%2C0.046%2C0.001%2C0.113%2C0.001c0.356%2C0%2C1.276-0.045%2C2.132-0.461%20c1.109-0.538%2C1.672-1.474%2C1.672-2.782c0-1.263-0.855-2.016-1.481-2.566c-0.383-0.335-0.712-0.624-0.712-0.906%20c0-0.285%2C0.241-0.501%2C0.546-0.773c0.493-0.441%2C0.958-1.069%2C0.958-2.257c0-1.045-0.135-1.745-0.97-2.188%20c0.087-0.045%2C0.394-0.077%2C0.547-0.1c0.452-0.06%2C1.112-0.131%2C1.112-0.5v-0.071h-3.293%20C-296.097%2C402.023-299.394%2C402.147-299.394%2C405.168L-299.394%2C405.168z%20M-294.077%2C411.623c0.064%2C1.007-0.798%2C1.751-2.091%2C1.845%20c-1.313%2C0.096-2.396-0.495-2.46-1.502c-0.03-0.483%2C0.182-0.956%2C0.598-1.335c0.422-0.381%2C1.001-0.616%2C1.632-0.664%20c0.074-0.004%2C0.148-0.009%2C0.221-0.009C-294.959%2C409.957-294.136%2C410.674-294.077%2C411.623z%20M-294.937%2C404.479%20c0.323%2C1.135-0.165%2C2.323-0.942%2C2.543c-0.089%2C0.025-0.181%2C0.038-0.275%2C0.038c-0.713%2C0-1.418-0.721-1.68-1.713%20c-0.146-0.558-0.135-1.046%2C0.033-1.514c0.165-0.461%2C0.461-0.772%2C0.833-0.878c0.089-0.025%2C0.182-0.038%2C0.276-0.038%20C-295.833%2C402.917-295.28%2C403.274-294.937%2C404.479z%20M-289.388%2C406.953v-2.148h-1.36v2.148h-2.148v1.361h2.148v2.148h1.36v-2.148%20h2.149v-1.361H-289.388z%22%2F%3E%3C%2Fsvg%3E');
+
+/**
+ *  INPUTS MODULE
+ *
+ *  contains styling for text inputs, textareas, checkboxes
+ *
+ *  .input
+ *    &--full
+ *    &--error
+ *
+ */
+.input {
+  @include appearance(none);
+  padding: (($global-baseline/2) - 1px) $global-baseline;
+
+  border-radius: $global-border-radius;
+  border: 1px solid #BDBDBD;
+
+  &:focus {
+    border-color: darken($color-dc-primary, 10%);
+    box-shadow: 0 0 3px rgba($color-dc-primary, 0.8);
+  }
+
+  &:disabled {
+    box-shadow: none;
+    background-color: lighten($color-bg, 2%);
+  }
+}
+  .input--full {
+    width: 100%;
+  }
+  .input--error {
+    border-color: $color-dc-secondary;
+
+    &:focus {
+      border-color: $color-dc-secondary;
+      box-shadow: 0 0 3px rgba($color-dc-secondary, 0.8);
+    }
+  }
+  .input--grouped {
+    border-radius: 0;
+
+    &:not(.input--grouped-first){
+      border-left: none;
+    }
+  }
+  .input--grouped-first {
+    border-top-left-radius: $global-border-radius;
+    border-bottom-left-radius: $global-border-radius;
+  }
+  .input--grouped-last {
+    border-top-right-radius: $global-border-radius;
+    border-bottom-right-radius: $global-border-radius;
+  }
+
+
+/**
+ *  SEARCHBOX INPUT
+ *
+ *  adds decoration for standard input[type="search"]
+ *
+ *  .input
+ *  <---  .input-search
+ *
+ */
+.input-search {
+  @extend .input;
+
+  padding-left: 3*$global-baseline;
+
+  border-radius: 100px;
+  background-image: $input-search-magnifier;
+  background-repeat: no-repeat;
+  background-position: $global-baseline 50%;
+}
+
+
+/**
+ *  CHECKBOX INPUT
+ *
+ *  adds decoration for standard checkbox
+ *
+ *  .input-checkbox
+ *    &__control
+ *    &__label
+ *
+ */
+.input-checkbox {
+  $input-checkbox-size: 15px;
+  $input-checkbox-checkmark: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2210px%22%20height%3D%2210px%22%20%20viewBox%3D%220%200%2010%2010%22%20enable-background%3D%22new%200%200%2010%2010%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3Echeckbox%3C%2Ftitle%3E%3Cdescription%3ECreated%20with%20Sketch%20(http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch)%3C%2Fdescription%3E%3Cg%20id%3D%22marketplace-search-results%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22marketplace%22%20transform%3D%22translate(-155.000000%2C%20-588.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Created-by%22%20transform%3D%22translate(151.000000%2C%20509.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Rectangle-39-copy-_x2B_-Shape%22%20transform%3D%22translate(1.000000%2C%2076.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cpath%20id%3D%22Shape%22%20fill%3D%22%231D1D1D%22%20d%3D%22M12.409%2C4.4c0.016-0.023%2C0.03-0.046%2C0.043-0.071l0.017-0.025l-0.004-0.001%20%20%20%20%20c0.035-0.076%2C0.056-0.161%2C0.056-0.251c0-0.316-0.241-0.572-0.537-0.572c-0.174%2C0-0.328%2C0.088-0.427%2C0.225l0%2C0l-4.701%2C6.352%20%20%20%20%20L4.587%2C7.97c-0.03-0.032-0.062-0.062-0.098-0.091L4.486%2C7.877l0%2C0C4.383%2C7.801%2C4.257%2C7.756%2C4.122%2C7.756%20%20%20%20%20c-0.354%2C0-0.642%2C0.308-0.642%2C0.685c0%2C0.172%2C0.06%2C0.329%2C0.158%2C0.447h0l2.855%2C3.358c0.117%2C0.166%2C0.303%2C0.274%2C0.513%2C0.274%20%20%20%20%20c0.211%2C0%2C0.396-0.108%2C0.514-0.274H7.52l0.002-0.006c0.013-0.018%2C0.024-0.035%2C0.036-0.055L12.409%2C4.4L12.409%2C4.4L12.409%2C4.4%20%20%20%20%20L12.409%2C4.4z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  $input-checkbox-checkmark-disabled: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2210px%22%20height%3D%2210px%22%20%20viewBox%3D%220%200%2010%2010%22%20enable-background%3D%22new%200%200%2010%2010%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3Echeckbox%3C%2Ftitle%3E%3Cdescription%3ECreated%20with%20Sketch%20(http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch)%3C%2Fdescription%3E%3Cg%20id%3D%22marketplace-search-results%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22marketplace%22%20transform%3D%22translate(-155.000000%2C%20-588.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%3E%20%20%3Cg%20id%3D%22Created-by%22%20transform%3D%22translate(151.000000%2C%20509.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cg%20id%3D%22Rectangle-39-copy-_x2B_-Shape%22%20transform%3D%22translate(1.000000%2C%2076.000000)%22%20sketch%3Atype%3D%22MSShapeGroup%22%3E%20%20%20%20%3Cpath%20id%3D%22Shape%22%20fill%3D%22%23727272%22%20d%3D%22M12.409%2C4.4c0.016-0.023%2C0.03-0.046%2C0.043-0.071l0.017-0.025l-0.004-0.001%20%20%20%20%20c0.035-0.076%2C0.057-0.161%2C0.057-0.251c0-0.316-0.242-0.572-0.537-0.572c-0.174%2C0-0.328%2C0.088-0.428%2C0.225l0%2C0l-4.701%2C6.352%20%20%20%20%20L4.587%2C7.97c-0.03-0.032-0.062-0.062-0.098-0.091L4.486%2C7.877l0%2C0C4.383%2C7.801%2C4.257%2C7.756%2C4.122%2C7.756%20%20%20%20%20c-0.354%2C0-0.642%2C0.308-0.642%2C0.685c0%2C0.172%2C0.06%2C0.329%2C0.158%2C0.448l0%2C0l2.855%2C3.357c0.117%2C0.166%2C0.303%2C0.273%2C0.513%2C0.273%20%20%20%20%20c0.211%2C0%2C0.396-0.107%2C0.514-0.273l0%2C0l0.002-0.006c0.013-0.018%2C0.024-0.035%2C0.036-0.055L12.409%2C4.4L12.409%2C4.4L12.409%2C4.4%20%20%20%20%20L12.409%2C4.4z%22%2F%3E%20%20%20%3C%2Fg%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+  display: inline-block;
+  vertical-align: middle;
+
+  &__control {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    width: $input-checkbox-size;
+    height: $input-checkbox-size;
+
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    border: 1px solid #BCBCBC;
+    border-radius: 3px;
+
+    cursor: pointer;
+    box-shadow: inset 0 1px 2px rgba(black, 0.2);
+
+    .input-checkbox__control:checked ~ & {
+      background-image: $input-checkbox-checkmark;
+    }
+
+    .input-checkbox__control:disabled ~ & {
+      background-color: lighten($color-bg, 2%);
+      border-color: lighten(#BCBCBC, 5%);
+      cursor: inherit;
+    }
+
+    .input-checkbox__control:disabled:checked ~ & {
+      background-image: $input-checkbox-checkmark-disabled;
+    }
+  }
+}
+
+
+/**
+ *  IMMERSIVE INPUT
+ *
+ *  styling for inline editing type inputs
+ *
+ *  .input-immersive
+ *    &--error
+ *
+ */
+.input-immersive {
+  @include appearance(none);
+
+  padding: 0;
+  margin: 0 0 -1px 0;
+
+  border: none;
+  border-bottom: 1px dashed #AAAAAA;
+}
+  .input-immersive--error {
+    border-color: $color-dc-secondary;
+  }
+
+
+/**
+*  INPUT SELECT
+*
+*  styling for searchbox
+*
+*  .input
+*  <---  .input-select
+*
+*/
+$input-select-arrow: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3Asketch%3D%22http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%2Fns%22%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2236px%22%20height%3D%2236px%22%20%20viewBox%3D%22-317%20382%2036%2036%22%20enable-background%3D%22new%20-317%20382%2036%2036%22%20xml%3Aspace%3D%22preserve%22%3E%3Ctitle%3EArrow%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch%20Beta.%3C%2Fdesc%3E%3Cg%20id%3D%22Page-1%22%20sketch%3Atype%3D%22MSPage%22%3E%20%3Cg%20id%3D%22UI-Elements%22%20transform%3D%22translate(-705.000000%2C%20-1153.000000)%22%20sketch%3Atype%3D%22MSArtboardGroup%22%20opacity%3D%220.4%22%3E%20%20%3Cg%20id%3D%22Dropdown-Normal%22%20transform%3D%22translate(56.000000%2C%201105.000000)%22%20sketch%3Atype%3D%22MSLayerGroup%22%3E%20%20%20%3Cpath%20id%3D%22Arrow%22%20sketch%3Atype%3D%22MSShapeGroup%22%20fill%3D%22%23969696%22%20d%3D%22M344.493%2C444.261l5.506%2C5.593l5.506-5.593%20%20%20%20c0.342-0.348%2C0.896-0.348%2C1.238%2C0c0.342%2C0.347%2C0.342%2C0.909%2C0%2C1.257l-6.125%2C6.223c-0.342%2C0.347-0.896%2C0.347-1.238%2C0l-6.125-6.223%20%20%20%20c-0.171-0.174-0.256-0.401-0.256-0.629c0-0.227%2C0.085-0.455%2C0.256-0.628C343.597%2C443.913%2C344.152%2C443.913%2C344.493%2C444.261z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+
+.input-select {
+  @extend .input;
+
+  @include appearance(none);
+
+  padding: ($global-baseline - 3px) $global-baseline;
+  padding-right: $global-baseline * 3;
+
+  background-image: $input-select-arrow;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-color: #F2F2F2;
+
+  color: #404040;
+
+  &.academy {
+    width: 200px;
+  }
+  &.user {
+    width: 300px;
+  }
+}
+
+/**
+ *  INVISIBLE INPUT
+ *
+ *  input without styling, for textareas
+ *
+ *  .input-invisible
+ *
+ */
+.input-invisible {
+  @include appearance(none);
+
+  resize: none;
+
+  padding: 0 0 $global-baseline 0;
+  margin: 0;
+
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+
+/**
+ *  FILE INPUT
+ *
+ *  decoration for a file input
+ *
+ *  .input-file
+ *    &__control
+ *
+ */
+.input-file {
+  display: block;
+  position: relative;
+
+  &__control {
+    @include appearance(none);
+
+    position: absolute;
+    z-index: 1;
+    top: 0; left: 0;
+
+    display: block;
+    width: 100%; height: 100%;
+
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+
+%input-social {
+  @extend .input;
+
+  padding-left: 3*$global-baseline;
+
+  background-repeat: no-repeat;
+  background-position: $global-baseline/2 50%;
+}
+/**
+ *  INPUT WEBSITE
+ *  
+ *  input with embedded website icon 
+ *
+ *  .input
+ *  <---  .input-website
+ *
+ */
+.input-website {
+  @extend %input-social;
+
+  background-image: $input-website-icon;
+}
+
+/**
+ *  INPUT FACEBOOK
+ *  
+ *  input with embedded facebook icon 
+ *
+ *  .input
+ *  <---  .input-facebook
+ *
+ */
+.input-facebook {
+  @extend %input-social;
+
+  background-image: $input-facebook-icon;
+}
+
+
+/**
+ *  INPUT LINKEDIN
+ *  
+ *  input with embedded linkedIn icon 
+ *
+ *  .input
+ *  <---  .input-linkedIn
+ *
+ */
+.input-linkedin {
+   @extend %input-social;
+
+  background-image: $input-linkedin-icon;
+}
+
+
+/**
+ *  INPUT TWITTER
+ *  
+ *  input with embedded twitter icon 
+ *
+ *  .input
+ *  <---  .input-twitter
+ *
+ */
+.input-twitter {
+   @extend %input-social;
+
+  background-image: $input-twitter-icon;
+}
+
+
+/**
+ *  INPUT GOOGLE PLUS
+ *  
+ *  input with embedded google plus icon 
+ *
+ *  .input
+ *  <---  .input-googleplus
+ *
+ */
+.input-googleplus {
+   @extend %input-social;
+
+  background-image: $input-googleplus-icon;
+}
+
+
+/**
+ *  INPUT RADIO
+ *
+ *  styling for radiobuttons
+ *
+ *  .input-radio
+ *    &__control
+ *    &__label
+ *
+ */
+.input-radio {
+  display: inline-block;
+  vertical-align: top;
+
+  margin-right: $global-baseline / 2;
+
+  &__control {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    width: $global-baseline * 2;
+    height: $global-baseline * 2;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 3px; left: 3px;
+      display: block;
+      width: 16px; height: 16px;
+
+      border: 2px solid darken(#f4f4f4, 15%);
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 8px; left: 8px;
+      display: none;
+      width: 6px; height: 6px;
+
+      background: $color-dc-primary;
+      border-radius: 50%;
+    }
+
+    .input-radio__control:checked ~ &:before {
+      border-color: $color-dc-primary;
+    }
+
+    .input-radio__control:checked ~ &:after {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/**
+ *  LOADING SPINNER MODULE
+ *
+ *  loading progress animation by John Peele
+ *  taken from here: http://codepen.io/johnpeele/pen/boxtc?editors=010
+ *
+ */
+$spinner-color:      $color-dc-primary;
+$spinner-size:       $global-baseline;
+$spinner-speed:      1s;
+$spinner-thickness:  2px; // Odd numbers created a "wobble" effect.
+
+// Animation Keyframes
+//********************************************************//
+@mixin rotate-forever {
+  0%    { @include transform(rotate(0deg)); }
+  100%  { @include transform(rotate(360deg)); }
+}
+@-webkit-keyframes rotate-forever { @include rotate-forever; }
+   @-moz-keyframes rotate-forever { @include rotate-forever; }
+        @keyframes rotate-forever { @include rotate-forever; }
+
+
+// The Loading Spinner
+//********************************************************//
+.loading-spinner {
+  @include animation-duration($spinner-speed);
+  @include animation-iteration-count(infinite);
+  @include animation-name(rotate-forever);
+  @include animation-timing-function(linear);
+  width: $spinner-size;
+  height: $spinner-size;
+  border: $spinner-thickness solid $spinner-color;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}

@@ -1,0 +1,174 @@
+/**
+ *  BUTTONS MODULE
+ *
+ *  contains styling for buttons
+ *
+ *  .button
+ *    &--full
+ *    &--primary
+ *    &--secondary
+ *    &--grouped
+ *    &--grouped-first
+ *    &--grouped-last
+ *
+ */
+$button-border-radius: $global-border-radius;
+
+.button {
+  display: inline-block;
+  padding: ($global-baseline/2 - 1px) $global-baseline;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: $global-baseline * 2;
+
+  text-align: center;
+
+  border-radius: $button-border-radius;
+}
+  .button--primary {
+    $button-color: #262D2C;
+    $button-hover-color: $button-color;
+    $button-active-color: #2C695D;
+
+    $button-bg-top: #9EDBCF;
+    $button-bg-bottom: #5CC4AF;
+
+    $button-hover-bg-top: #AFE1D7;
+    $button-hover-bg-bottom: #6DCFBF;
+
+    $button-active-bg-top: #519F8F;
+    $button-active-bg-bottom: #5DB5A4;
+
+    $button-border-color: #4FA291;
+    $button-hover-border-color: $button-border-color;
+    $button-active-border-color: #357465;
+
+    $button-box-shadow: inset 0 1px 0 rgba(white, 0.28);
+    $button-hover-box-shadow: $button-box-shadow;
+    $button-active-box-shadow: inset 0 1px 0 rgba(black, 0.12),
+                               0 1px 0 rgba(white,0.5);
+
+    border-style: solid;
+    border-width: 1px;
+    color: $button-color;
+
+    background: $button-bg-bottom;
+    @include background( linear-gradient( $button-bg-top, $button-bg-bottom ) );
+
+    border-color: $button-border-color;
+    box-shadow: $button-box-shadow;
+
+    text-shadow: 0 1px 0 rgba(white, 0.18);
+
+    &:hover {
+      color: $button-hover-color;
+
+      background: $button-hover-bg-bottom;
+      @include background( linear-gradient( $button-hover-bg-top, $button-hover-bg-bottom ) );
+
+      border-color: $button-hover-border-color;
+      box-shadow: $button-hover-box-shadow;
+    }
+
+    &.is-active,
+    &:active {
+      color: $button-active-color;
+
+      background: $button-active-bg-bottom;
+      @include background( linear-gradient( $button-active-bg-top, $button-active-bg-bottom ) );
+
+      border-color: $button-active-border-color;
+      box-shadow: $button-active-box-shadow;
+    }
+
+    &:disabled {
+      color: lighten($button-color, 40%);
+
+      background: lighten($button-bg-bottom, 10%);
+      @include background( linear-gradient( lighten($button-bg-top, 10%), lighten($button-bg-bottom, 10%) ) );
+      box-shadow: $button-box-shadow;
+      border-color: lighten($button-border-color, 10%);
+    }
+  }
+  .button--secondary {
+    $button-color: #4C5352;
+    $button-hover-color: $button-color;
+    $button-active-color: #787878;
+
+    $button-bg-top: #FFFFFF;
+    $button-bg-bottom: #E8E8E8;
+
+    $button-hover-bg-top: $button-bg-top;
+    $button-hover-bg-bottom: #f7f7f7;
+
+    $button-active-bg-top: #B8B8B8;
+    $button-active-bg-bottom: #DEDEDE;
+
+    $button-border-color: #A1A1A1;
+    $button-hover-border-color: $button-border-color;
+    $button-active-border-color: #8E8E8E;
+
+    $button-box-shadow: none;
+    $button-hover-box-shadow: $button-box-shadow;
+    $button-active-box-shadow: inset 0 1px 0 rgba(black, 0.09),
+                               0 1px 0 rgba(white, 0.5);
+
+    border-style: solid;
+    border-width: 1px;
+    color: $button-color;
+
+    background: $button-bg-bottom;
+    @include background( linear-gradient( $button-bg-top, $button-bg-bottom ) );
+
+    border-color: $button-border-color;
+    box-shadow: $button-box-shadow;
+
+    &:hover {
+      color: $button-hover-color;
+
+      background: $button-hover-bg-bottom;
+      @include background( linear-gradient( $button-hover-bg-top, $button-hover-bg-bottom ) );
+
+      border-color: $button-hover-border-color;
+      box-shadow: $button-hover-box-shadow;
+    }
+
+    &.is-active,
+    &:active {
+      color: $button-active-color;
+
+      background: $button-active-bg-bottom;
+      @include background( linear-gradient( $button-active-bg-top, $button-active-bg-bottom ) );
+
+      border-color: $button-active-border-color;
+      box-shadow: $button-active-box-shadow;
+    }
+
+    &:disabled {
+      color: lighten($button-color, 40%);
+
+      background: lighten($button-bg-bottom, 5%);
+      @include background( linear-gradient( lighten($button-bg-top, 5%), lighten($button-bg-bottom, 5%) ) );
+      box-shadow: $button-box-shadow;
+      border-color: lighten($button-border-color, 5%);
+    }
+  }
+  .button--grouped {
+    border-radius: 0;
+
+    &:not(.button--grouped-first){
+      border-left: none;
+    }
+  }
+  .button--grouped-first {
+    border-top-left-radius: $button-border-radius;
+    border-bottom-left-radius: $button-border-radius;
+  }
+  .button--grouped-last {
+    border-top-right-radius: $button-border-radius;
+    border-bottom-right-radius: $button-border-radius;
+  }
+  .button--full {
+    width: 100%;
+  }

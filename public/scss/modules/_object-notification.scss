@@ -1,0 +1,43 @@
+/**
+ *  OBJECT NOTIFICATION
+ *
+ *  notification entity in the notifications popover
+ *
+ *  .object-notification
+ *    &__body
+ *    &__timestamp
+ *    &__action
+ *  <---  .object-notifications-empty
+ *          &__icon
+ *
+ */
+.object-notification {
+  font-size: 13px;
+  line-height: $global-baseline * 2;
+
+  &__body {
+    // nothing here for now...
+  }
+
+  &__timestamp {
+    color: $color-tx-muted;
+    font-weight: 300;
+  }
+}
+
+.object-notification-empty {
+  // @extend .object-notification;
+
+  .object-notification__body {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: $global-baseline * 3;
+    text-align: center;
+
+    color: $color-tx-muted;
+  }
+
+  &__icon {
+    height: $global-baseline * 10;
+  }
+}

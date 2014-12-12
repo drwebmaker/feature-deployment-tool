@@ -1,0 +1,61 @@
+/**
+ *  LEADERVBOARD ITEM MODULE
+ *
+ *  styling for leaderboard items in user activity page
+ *
+ *  .leaderboard-item
+ *    &__stat
+ *    <>--  .li-user
+ *            &__name
+ *            &__avatar
+ *    <>--  .li-course
+ *            &__name
+ *            &__avatar
+ *
+ */
+.leaderboard-item {
+  padding:  ($global-baseline*3/2 - 1px)
+            0
+            $global-baseline*3/2
+            0;
+
+  border-top: 1px solid #ECECEC;
+
+  &__stat {
+    color: $color-tx-muted;
+    font-weight: 300;
+  }
+}
+
+.li-user {
+  // ...
+
+  &__name {
+    font-weight: 400;
+  }
+
+  &__avatar {
+    display: block;
+    width: $global-baseline * 2;
+    height: $global-baseline * 2;
+
+    border: 1px solid #dedede;
+    border-radius: 50%;
+  }
+}
+
+.li-course {
+  // ...
+
+  &__name {
+    font-weight: 400;
+  }
+
+  &__thumb {
+    display: block;
+    height: $global-baseline * 2;
+
+    border: 1px solid #dedede;
+    border-radius: $global-baseline/4;
+  }
+}

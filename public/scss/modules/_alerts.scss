@@ -1,0 +1,108 @@
+$alert-padding: 10px;
+$alert-border-radius: 4px;
+$alert-link-font-weight: bold;
+
+$alert-success-bg: #dff0d8;
+$alert-success-text: #3c763d;
+$alert-success-border: darken($alert-success-bg, 5%);
+
+$alert-info-bg: #d9edf7;
+$alert-info-text: #31708f;
+$alert-info-border: darken($alert-info-bg, 5%);
+
+$alert-warning-bg: #fcf8e3;
+$alert-warning-text: #8a6d3b;
+$alert-warning-border: darken($alert-warning-bg, 5%);
+
+$alert-danger-bg: #f2dede;
+$alert-danger-text: #a94442;
+$alert-danger-border: darken($alert-danger-bg, 5%);
+
+@mixin alert-variant($background, $border, $text-color) {
+  background-color: $background;
+  border-color: $border;
+  color: $text-color;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+  .alert-link {
+    color: darken($text-color, 10%);
+  }
+}
+
+.growl-container {
+  z-index: 10;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  float: right;
+  width: 250px
+}
+
+.growl-item {
+  &.ng-enter, &.ng-leave {
+    -webkit-transition: .5s linear all;
+    -moz-transition: .5s linear all;
+    -o-transition: .5s linear all;
+    transition: .5s linear all
+  }
+
+  &.ng-enter, &.ng-leave.ng-leave-active {
+    opacity: 0
+  }
+
+  &.ng-leave, &.ng-enter.ng-enter-active {
+    opacity: 1
+  }
+}
+
+.alert {
+  box-sizing: border-box;
+  padding: $alert-padding;
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  margin-bottom: 12px;
+
+  h4 {
+    margin-top: 0;
+    color: inherit;
+  }
+
+  .alert-link {
+    font-weight: normal;
+  }
+
+  > p,
+  > ul {
+    margin-bottom: 0;
+  }
+
+  > p + p {
+    margin-top: 5px;
+  }
+
+  .close {
+//    position: relative;
+//    top: -2px;
+//    right: -21px;
+//    color: inherit;
+    display: none;
+  }
+}
+
+.alert-success {
+  @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+}
+
+.alert-info {
+  @include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
+}
+
+.alert-warning {
+  @include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
+}
+
+.alert-danger {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+}

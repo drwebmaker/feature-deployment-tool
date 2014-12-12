@@ -1,0 +1,45 @@
+/**
+ *  GLOBAL STATE STYLES & UTILITIES
+ *
+ */
+.is-left-aligned { text-align: left !important; }
+.is-right-aligned { text-align: right !important; }
+.is-center-aligned { text-align: center !important; }
+
+.is-top-aligned { vertical-align: top !important; }
+.is-middle-aligned { vertical-align: middle !important; }
+.is-bottom-aligned { vertical-align: bottom !important; }
+
+.is-floated-right { float: right; }
+.is-floated-left { float: left; }
+
+.is-unstyled {
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+.is-stuck {
+  position: fixed !important;
+  top: 0;
+}
+
+.is-hidden { display: none; }
+.is-fixed { overflow: hidden; }
+
+.new-positioning-grid {
+  position: relative;
+}
+
+.fonts-reset {
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+}
+
+.tech-problems {
+//  padding-top: 100px;
+//  background-image: url('/image.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+}

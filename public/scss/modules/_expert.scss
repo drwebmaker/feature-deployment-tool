@@ -1,0 +1,16 @@
+.expert-slide {
+  overflow-y: hidden;
+  max-height: 0;
+  background-color: $color-bg;
+
+  @include transition-property(max-height);
+  @include transition-duration(1s);
+  .st-order__details {
+    padding: $global-baseline;
+  }
+}
+.open {
+  .expert-slide {
+    max-height: 280px;
+  }
+}

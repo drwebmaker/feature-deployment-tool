@@ -1,0 +1,39 @@
+/**
+ *  LABELS MODULE
+ *
+ *  highlighted text on pages, e.g. "new", "premium" etc
+ *
+ *  .label
+ *    &--primary
+ *    &--secondary
+ *    &--tertiary
+ *    &--quaternary
+ *
+ */
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 $global-baseline * 3/4;
+
+  font-size: $global-font-size-small;
+  font-weight: 600;
+  line-height: $global-baseline * 7/4;
+
+  color: white;
+  text-shadow: 0 -1px 1px rgba(black, 0.3);
+
+  border-radius: $global-border-radius/2;
+  background: lighten($color-tx-muted, 10%);
+}
+  .label--primary {
+    background: $color-dc-primary;
+  }
+  .label--secondary {
+    background: $color-dc-secondary;
+  }
+  .label--tertiary {
+    background: $color-dc-tertiary;
+  }
+  .label--quaternary {
+    background: $color-dc-quaternary;
+  }

@@ -1,0 +1,12 @@
+<div class="selectifier-item-user">
+  <div class="l-list l-list--inline">
+    <div class="l-list__item">
+      <img ng-src="{{item.value.avatar}}" alt="{{item.value.name}}" class="selectifier-item-user__avatar">
+    </div>
+
+    <div class="l-list__item">
+      <div class="selectifier-item__name">{{item.value.name || item.value.email}}</div>
+      <div class="selectifier-item__extra">{{item.value.email}}</div>
+    </div>
+  </div>
+</div>

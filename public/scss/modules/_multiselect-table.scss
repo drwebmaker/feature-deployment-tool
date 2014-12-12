@@ -1,0 +1,80 @@
+/**
+ *  MULTISELECT TABLE MODULE
+ *
+ *  interactive table where user see list of options,
+ *  select multiple options, and perform group
+ *  operations on selected options
+ *
+ *  .multiselect-table
+ *    &__header
+ *      <>--  .mt-header
+ *              &__select-all
+ *              &__actions
+ *              &__title
+ *    &__body
+ *      <>--  .mt-option
+ *              &__select
+ *              &--selected
+ *
+ */
+.multiselect-table {
+  // nothing here for now...
+
+  &__header {
+    position: relative;
+    z-index: 1;
+    height: $global-baseline * 6;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.mt-header {
+  padding:  $global-baseline * 3/2
+            $global-baseline
+            ($global-baseline * 3/2 - 1px)
+            $global-baseline;
+
+  background: white;
+  border-bottom: 1px solid #E2E2E2;
+
+  &__select-all {
+    line-height: 0;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: $global-baseline*3;
+  }
+
+  &__actions {
+    line-height: 0; // removes extra whitespace below buttons that are inside ( buttons are inline-block )
+  }
+}
+
+.mt-option {
+  position: relative;
+
+  display: block;
+  padding:  $global-baseline * 2
+            $global-baseline
+            ($global-baseline * 2 - 1px)
+            $global-baseline*3;
+
+  border-bottom: 1px solid #E2E2E2;
+
+  &__select {
+    position: absolute;
+    z-index: 15;
+    top: $global-baseline * 2.3; left: $global-baseline;
+
+    line-height: 0;
+  }
+}
+  .mt-option--selected {
+    background-color: lighten($color-bg, 1%);
+  }

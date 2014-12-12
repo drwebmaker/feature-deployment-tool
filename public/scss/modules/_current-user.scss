@@ -1,0 +1,62 @@
+/**
+ *  CURRENT USER MODULE
+ *
+ *  shows current user in header & current user popover
+ *
+ *  .current-user
+ *    &__name
+ *    &__avatar
+ *  <---  .current-user-popover
+ *          &__email
+ *
+ */
+.current-user {
+  // nothing here for now...
+
+  &__name {
+    display: inline-block;
+    margin-right: $global-baseline;
+  }
+
+  &__avatar {
+    $current-user-avatar-size: 3 * $global-baseline;
+
+    display: inline-block;
+    vertical-align: top;
+    width: $current-user-avatar-size;
+    height: $current-user-avatar-size;
+    margin: ($global-header-height - 2px - $current-user-avatar-size)/2 0;
+
+    border-radius: 50%;
+  }
+}
+
+.current-user-popover {
+  // @extend .current-user;
+
+  .current-user__name {
+    display: block;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: $global-baseline * 2;
+
+    text-align: center;
+  }
+
+  .current-user__avatar {
+    $current-user-avatar-size: 7 * $global-baseline;
+    display: block;
+    margin: 0 auto;
+
+    width: $current-user-avatar-size;
+    height: $current-user-avatar-size;
+  }
+
+  &__email {
+    display: block;
+    text-align: center;
+    color: $color-tx-muted;
+    font-weight: 300;
+  }
+}

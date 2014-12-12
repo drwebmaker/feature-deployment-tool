@@ -1,0 +1,1 @@
+angular.module('ui', ['highcharts-ng', 'ngWig', 'angular-growl', 'admin']);

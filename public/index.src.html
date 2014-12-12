@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="admin">
+<head>
+  <meta charset="utf-8">
+  <title>StudyTube - Learn & Development</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/ng-wig.css">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <!--[if lte IE 8]>
+    <script>
+      // @todo: add all the custom elements
+      document.createElement('ng-include');
+      document.createElement('ng-pluralize');
+      document.createElement('ng-view');
+
+    </script>
+  <![endif]-->
+  <script src="//use.typekit.net/fen0vly.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+</head>
+<body ng-controller="DeploymentController" popup-container>
+  <!--[if lt IE 8]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div growl></div>
+
+  <ui-view></ui-view>
+
+  <div class="centroid" ng-if="!isAuthorized()" ng-cloak style="display: none;">
+    <div class="centroid__object">
+      <div class="loader">
+        <div class="loader__image l-block">
+          <div class="spinner"></div>
+        </div>
+        <div class="loader__text">
+          <div>Checking your credentials</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--SCRIPTS-->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-animate.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/restangular/1.4.0/restangular.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.tpl.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/highcharts/4.0.3/highcharts.js'></script>
+  <script src='/javascript/libs/angular-hotkeys.min.js'></script>
+  <script src='/javascript/libs/highcharts-ng.min.js'></script>
+  <script src='/javascript/libs/ng-wig.min.js'></script>
+  <script src='/javascript/libs/ng-biscuit.min.js'></script>
+  <script src='/javascript/libs/angular-growl.min.js'></script>
+  <script src='/javascript/app.min.js'></script>
+<!--SCRIPTS END-->
+
+  <scss-grid>
+</body>
+</html>

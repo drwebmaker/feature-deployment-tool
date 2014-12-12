@@ -1,0 +1,11 @@
+.annotation {
+  //
+  &__comment {
+    padding: $global-baseline;
+    background: $color-bg;
+  }
+  &__date {
+    min-width: 90px;
+    color: #949494;
+  }
+}

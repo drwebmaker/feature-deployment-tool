@@ -1,0 +1,90 @@
+/**
+ *  REPORT TABLE MODULE
+ *
+ *  table for a summary of an operation: invoice, assign to users, assign courses etc
+ *
+ *  .report-table
+ *    <>--  .rt-header
+ *            &__title
+ *    &__row
+ *      &--summary
+ *      &--highlighted
+ *      <>--  .rt-entry
+ *              &__title
+ *              &__extra
+ *            <-- .rt-entry-user
+ *                  &__avatar
+ *            <-- .rt-entry-course
+ *                  &__thumb
+ *
+ */
+.report-table {
+  // nothing here for now...
+
+  &__row {
+    padding: $global-baseline 0 0 0;
+
+    &--summary {
+      margin-top: $global-baseline;
+      padding-top: $global-baseline - 1px;
+
+      font-weight: 600;
+
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    &--highlighted {
+      font-size: 16px;
+      color: $color-dc-primary;
+    }
+  }
+}
+
+.rt-header {
+  padding-bottom: $global-baseline - 1px;
+
+    color: $color-dc-primary;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+  &__title {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.rt-entry {
+  // nothing here for now...
+
+  &__title {
+    // nothing here for now...
+  }
+
+  &__extra {
+    font-weight: 300;
+    color: $color-tx-muted;
+  }
+}
+
+.rt-entry-user {
+  // @extend .rt-entry
+
+  &__avatar {
+    display: block;
+    height: $global-baseline * 2;
+    width: $global-baseline * 2;
+
+    border-radius: 50%;
+  }
+}
+
+.rt-entry-course {
+  // @extend .rt-entry
+
+  &__thumb {
+    display: block;
+    height: $global-baseline * 2;
+    width: $global-baseline * 3;
+
+    border-radius: $global-border-radius / 2;
+  }
+}

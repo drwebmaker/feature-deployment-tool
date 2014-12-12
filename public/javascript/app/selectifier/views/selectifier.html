@@ -1,0 +1,47 @@
+<div>
+  <div ng-class="{'l-block-large': selectedItems.length}">
+    <div class="selectifier">
+      <div class="selectifier__control">
+        <div ng-class="{'grid grid--full': config.options.email}">
+          <div ng-class="{'grid__item four-fifths': config.options.email}">
+            <input  type="text" 
+                    class="input input--full" 
+                    ng-class="{'input--grouped input--grouped-first': config.options.email}"
+                    size="50" 
+                    placeholder="{{config.options.placeholder}}"
+                    ng-model="query"
+                    ng-change="handleChangeEvent()"
+                    ng-paste="handlePasteEvent()"
+                    ng-blur="handleBlurEvent()"
+                    ng-keydown="handleKeyDown($event)">
+          </div><!--
+          --><div class="grid__item one-fifth" ng-if="config.options.email">
+            <button class="button button--secondary button--full button--grouped button--grouped-last"
+                    ng-click="addEmail()"
+                    ng-disabled="!isValidEmail(query)">add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="s-suggestions" ng-show="suggestionsAreVisible">
+        <ul class="l-list">
+          <li class="l-list__item" ng-repeat="item in suggestions">
+            <div class="s-suggestions__item"
+                 ng-class="{selected: currentSuggestion == item}"
+                 ng-click="selectSuggestion(item)"
+                 ng-mouseover="highlightSuggestion(item)"
+                 ng-include="getSuggestionTemplate(item)"
+            ></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <ul class="l-list">
+    <li class="l-list__item"
+        ng-repeat="item in selectedItems"
+        ng-include="getSelectionTemplate()"
+    ></li>
+  </ul>
+</div>

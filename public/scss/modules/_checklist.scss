@@ -1,0 +1,48 @@
+/**
+ *  CHECKLIST MODULE
+ *
+ *  styling for task-completion checklist
+ *
+ *  .checklist
+ *    &__status
+ *    <>--  .c-item
+ *            &__condition
+ *            &__location
+ *            &--first
+ *
+ */
+.checklist {
+  border-radius: $global-baseline;
+
+  border: 1px solid #ccc;
+}
+
+.c-item {
+  padding: $global-baseline;
+
+  border-top: 1px solid #ccc;
+
+  &__condition {
+    // nothing here for now...
+  }
+
+  &__location {
+    font-weight: 300;
+
+    color: $color-tx-muted;
+  }
+}
+  .c-item--first {
+    border-top: none;
+  }
+
+.checklist-status {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: $global-baseline * 3;
+
+  color: $color-tx-muted;
+}
+  .checklist-status--success {
+    color: mix($color-dc-primary, $color-tx, 80%);
+  }

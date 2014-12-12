@@ -1,0 +1,120 @@
+#circleG{
+  width:70px;
+}
+
+.circleG{
+  background-color:#FFFFFF;
+  float:left;
+  height:15px;
+  margin-left:8px;
+  width:15px;
+  -moz-animation-name:bounce_circleG;
+  -moz-animation-duration:1.35s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-direction:linear;
+  -moz-border-radius:10px;
+  -webkit-animation-name:bounce_circleG;
+  -webkit-animation-duration:1.35s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:linear;
+  -webkit-border-radius:10px;
+  -ms-animation-name:bounce_circleG;
+  -ms-animation-duration:1.35s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-direction:linear;
+  -ms-border-radius:10px;
+  -o-animation-name:bounce_circleG;
+  -o-animation-duration:1.35s;
+  -o-animation-iteration-count:infinite;
+  -o-animation-direction:linear;
+  -o-border-radius:10px;
+  animation-name:bounce_circleG;
+  animation-duration:1.35s;
+  animation-iteration-count:infinite;
+  animation-direction:linear;
+  border-radius:10px;
+}
+
+#circleG_1{
+  -moz-animation-delay:0.27s;
+  -webkit-animation-delay:0.27s;
+  -ms-animation-delay:0.27s;
+  -o-animation-delay:0.27s;
+  animation-delay:0.27s;
+}
+
+#circleG_2{
+  -moz-animation-delay:0.63s;
+  -webkit-animation-delay:0.63s;
+  -ms-animation-delay:0.63s;
+  -o-animation-delay:0.63s;
+  animation-delay:0.63s;
+}
+
+#circleG_3{
+  -moz-animation-delay:0.8099999999999999s;
+  -webkit-animation-delay:0.8099999999999999s;
+  -ms-animation-delay:0.8099999999999999s;
+  -o-animation-delay:0.8099999999999999s;
+  animation-delay:0.8099999999999999s;
+}
+
+@-moz-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:#3FAE98}
+
+  100%{
+  }
+
+}
+
+@-webkit-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:#3FAE98}
+
+  100%{
+  }
+
+}
+
+@-ms-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:#3FAE98}
+
+  100%{
+  }
+
+}
+
+@-o-keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:#3FAE98}
+
+  100%{
+  }
+
+}
+
+@keyframes bounce_circleG{
+  0%{
+  }
+
+  50%{
+    background-color:#3FAE98}
+
+  100%{
+  }
+
+}

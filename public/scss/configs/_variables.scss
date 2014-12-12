@@ -1,0 +1,29 @@
+// Global theme colors:
+// bg - background
+// tx - text
+// dc - decoration
+
+  $color-bg:            #F2F2F2;
+  $color-bg-alt:        #3E4955;
+
+  $color-tx:            #404040;
+  $color-tx-alt:        #FFFFFF;
+  $color-tx-muted:      #949494;
+
+  $color-dc-primary:    #3fae98; // green
+  $color-dc-secondary:  #D14E4E; // red
+  $color-dc-tertiary:   #89A6C5; // blue
+  $color-dc-quaternary: #F4BD52; // yellow
+
+
+// Global layout parameters:
+
+  $global-baseline:        12px;
+
+  $global-font-size:       14px;
+  $global-font-size-small: 12px;
+  $global-line-height:     $global-baseline * 2;
+
+  $global-header-height:   $global-baseline * 4;
+
+  $global-border-radius:   $global-baseline / 2;

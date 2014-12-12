@@ -1,0 +1,40 @@
+/**
+ *  PAGE SIDEBAR MODULE
+ *
+ *  sidebar navigation for general layout
+ *
+ *  .page-sidebar
+ *    <>--  .ps-menu
+ *            &__title
+ *            &__item
+ *
+ */
+.page-sidebar {
+  padding-top: $global-baseline * 7;
+}
+
+.ps-menu {
+  // nothing here for now...
+
+  &__title {
+    display: block;
+    padding: $global-baseline 0 ($global-baseline - 2px) 0;
+
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    border-bottom: 2px solid darken($color-bg, 8%);
+  }
+
+  &__item {
+    display: block;
+    color: $color-dc-primary;
+
+    &:hover,
+    &--active{
+      color: $color-tx;
+    }
+  }
+}

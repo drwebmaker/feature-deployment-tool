@@ -1,0 +1,204 @@
+/**
+ *  CONTENT PANEL MODULE
+ *
+ *  boxed-in wrapper for the main content area(s) of the page
+ *
+ *  .content-panel
+ *    &__block
+ *      <>--  .cp-empty
+ *              &__icon
+ *              &__body
+ *      <>--  .cp-header
+ *              &__title-primary
+ *              &__title-secondary
+ *              &__title-tertiary
+ *              &__info
+ *            <---  .cp-header-user
+ *                    &__avatar
+ *                    &__subscription
+ *                      &--active
+ *                      &--cancelled
+ *            <---  .cp-header-course
+ *                    &__thumb
+ *                    &__instructor
+ *                    &__price
+ *    <>--  .cp-tabs
+ *            &__item
+ *            &--active
+ *            &--last
+ *
+ */
+.content-panel {
+  border-radius: $global-border-radius;
+  background: white;
+  box-shadow: 0 1px 2px rgba(black, 0.15);
+
+  &__block {
+    padding:  $global-baseline * 3
+              $global-baseline * 3
+              ($global-baseline * 3 - 1px)
+              $global-baseline * 3;
+
+    border-bottom: 1px solid #ECECEC;
+
+    &:first-of-type {
+      border-top-right-radius: $global-border-radius;
+      border-top-left-radius: $global-border-radius;
+    }
+
+    &:last-of-type {
+      padding-bottom: $global-baseline * 3;
+
+      border-bottom: none;
+      border-bottom-right-radius: $global-border-radius;
+      border-bottom-left-radius: $global-border-radius;
+    }
+
+    &--small {
+      padding-top: $global-baseline * 2;
+    }
+  }
+}
+
+
+.cp-header {
+  // nothing here for now...
+
+  &__title-primary {
+    font-size: $global-baseline * 2;
+    line-height: $global-baseline * 3;
+  }
+
+  &__title-secondary {
+    font-size: 18px;
+    line-height: $global-baseline * 3;
+    font-weight: 300;
+  }
+
+  &__title-tertiary {
+    color: $color-tx-muted;
+    font-weight: 300;
+  }
+
+  &__info {
+    overflow: hidden;
+
+    font-weight: 300;
+    line-height: $global-baseline * 3/2;
+
+    color: $color-tx-muted;
+
+    @include transition-property(height);
+    @include transition-duration(0.3s);
+  }
+}
+
+.cp-header-user {
+  // @extend .cp-header;
+
+  &__avatar {
+    display: block;
+    height: $global-baseline * 8;
+    width: $global-baseline * 8;
+    margin-right: $global-baseline;
+
+    border-radius: 50%;
+  }
+
+  &__subscription {
+    cursor: help;
+    color: $color-tx-muted;
+
+    &--active {
+      color: $color-dc-primary;
+    }
+
+    &--cancelled {
+      color: $color-dc-secondary;
+    }
+  }
+}
+
+.cp-header-course {
+  // @extend .cp-header;
+
+  &__thumb {
+    display: block;
+    height: $global-baseline * 8;
+    margin-right: $global-baseline;
+
+    border: 1px solid #dedede;
+    border-radius: $global-baseline / 4;
+  }
+
+  &__instructor {
+    // ...
+
+    &:after {
+      content: ',';
+      display: inline-block;
+      margin-right: $global-baseline/2;
+    }
+
+    &:last-of-type:after {
+      content: none;
+    }
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+
+.cp-tabs {
+  // nothing here for now...
+
+  &__item {
+    display: block;
+    width: 100%;
+    padding:  $global-baseline * 2
+              $global-baseline * 2
+              ($global-baseline * 2 - 1px)
+              $global-baseline * 2;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border-right: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+
+    color: $color-tx-muted;
+
+    &--active {
+      border-bottom: none;
+
+      color: $color-tx;
+    }
+
+    &--last {
+      border-right: none;
+    }
+  }
+}
+
+.cp-empty {
+  // ...
+
+  &__icon {
+    height: $global-baseline * 10;
+  }
+
+  &__body {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: $global-baseline * 3;
+    text-align: center;
+
+    color: $color-tx-muted;
+  }
+}

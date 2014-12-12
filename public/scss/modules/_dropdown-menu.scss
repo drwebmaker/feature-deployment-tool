@@ -1,0 +1,78 @@
+/**
+ *  DROPDOWN MODULE
+ *
+ *  provides dropdown placement with customizable pivot and arrow
+ *
+ *  .dropdown
+ *    &--pivot-left
+ *    &--pivot-center
+ *    &--pivot-right
+ *    <>--  .d-menu
+ *            &__item
+ *
+ */
+$dropdown-arrow-size: $global-baseline;
+
+$dropdown-bg: white;
+$dropdown-border: 1px solid rgba(black, 0.15);
+$dropdown-box-shadow: 0 1px 3px rgba(black, 0.2);
+$dropdown-box-shadow-fix: 3px;
+
+$dropdown-width: $global-baseline * 15;
+
+.dropdown {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+
+  margin-top: $global-baseline;
+}
+  .dropdown--pivot-left {
+    left: 0;
+
+    &:before {
+      @include top-arrow( $dropdown-arrow-size, $dropdown-bg, 'left', $global-baseline );
+      box-shadow: $dropdown-box-shadow;
+      border: $dropdown-border;
+    }
+
+    &:after {
+      @include top-arrow-fix( $dropdown-arrow-size, $dropdown-box-shadow-fix, $dropdown-bg, 'left', $global-baseline );
+    }
+  }
+  .dropdown--pivot-right {
+    right: 0;
+
+    &:before {
+      @include top-arrow( $dropdown-arrow-size, $dropdown-bg, 'right', $global-baseline );
+      box-shadow: $dropdown-box-shadow;
+      border: $dropdown-border;
+    }
+
+    &:after {
+      @include top-arrow-fix( $dropdown-arrow-size, $dropdown-box-shadow-fix, $dropdown-bg, 'right', $global-baseline );
+    }
+  }
+
+.d-menu {
+  width: $dropdown-width;
+  padding: $global-baseline/2 0;
+
+  background: $dropdown-bg;
+  border: $dropdown-border;
+  border-radius: $global-border-radius/2;
+  box-shadow: $dropdown-box-shadow;
+
+  &__item {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+
+    padding: $global-baseline/2 $global-baseline;
+
+    &:hover {
+      background: lighten($color-dc-tertiary, 25%);
+    }
+  }
+}

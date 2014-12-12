@@ -1,0 +1,35 @@
+/**
+ *  TRICOL LAYOUT
+ *
+ *  three column layout with left part, right part, and center-aligned middle part
+ *
+ *  .l-tricol
+ *    &__left
+ *    &__right
+ *    &__mid
+ *
+ */
+.l-tricol {
+  @extend %cf;
+  position: relative;
+
+  &__left {
+    float: left;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__right {
+    float: right;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__mid {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+
+    text-align: center;
+  }
+}

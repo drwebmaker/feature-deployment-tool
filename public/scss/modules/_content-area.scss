@@ -1,0 +1,47 @@
+/**
+ *  CONTENT AREA MODULE
+ *
+ *  content with standard styling: paragraph margins,
+ *  links styling, strong & em text styling, etc.
+ *
+ *  .content-area
+ *
+ */
+.content-area {
+  p, ul, ol {
+    margin-bottom: $global-baseline;
+  }
+
+  ul, ol {
+    margin-left: $global-baseline * 2;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  a {
+    color: $color-dc-primary;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}

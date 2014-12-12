@@ -1,0 +1,21 @@
+/**
+ *  WRAP LAYOUT
+ *
+ *  maintains horizontal boundaries for the page
+ *
+ *  .l-wrap
+ *  .l-wrap-full
+ *
+ */
+.l-wrap {
+  max-width: $global-baseline * 102;
+  padding-left: $global-baseline * 2;
+  padding-right: $global-baseline * 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-wrap-full {
+  margin-left: auto;
+  margin-right: auto;
+}

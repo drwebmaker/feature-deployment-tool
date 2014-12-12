@@ -1,0 +1,29 @@
+/**
+ *  IMAGE OVERLAY LAYOUT
+ *
+ *  image with some content on top of it
+ *
+ *  .l-image-overlay
+ *    &__image
+ *    &__overlay
+ *      &--full
+ *
+ */
+.l-image-overlay {
+  position: relative;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+
+    &--full {
+      height: 100%;
+    }
+  }
+}

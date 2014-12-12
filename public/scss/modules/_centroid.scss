@@ -1,0 +1,28 @@
+/**
+ *  CENTROID MODULE
+ *
+ *  the only object centered in the screen
+ *
+ *  .centroid
+ *    &__object
+ *
+ */
+.centroid {
+  @extend %center;
+
+  position: absolute;
+  top: 0; left: 0;
+
+  display: block;
+  height: 100%; width: 100%;
+
+  text-align: center;
+
+  &__object {
+    display: inline-block;
+    vertical-align: middle;
+
+    text-align: left;
+  }
+}
+

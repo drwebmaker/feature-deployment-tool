@@ -1,0 +1,97 @@
+/**
+ *  SIMPLE TABLE MODULE
+ *
+ *  styling for an ordinary table with heading (row titles) and rows
+ *  used in billing history pages, course requests, leaderboards
+ *
+ *  .simple-table
+ *    &__row
+ *    &__header
+ *
+ */
+.simple-table {
+  // ...
+
+  &__row {
+    padding:  ($global-baseline * 3/2 - 1px)
+              $global-baseline * 3/2
+              $global-baseline * 3/2
+              $global-baseline * 3/2;
+
+    border-top: 1px solid #E2E2E2;
+  }
+    &__row--last {
+      padding-bottom: $global-baseline * 3/2 - 1px;
+      border-bottom: 1px solid #E2E2E2;
+    }
+    &__row--highlighted {
+      background: lighten($color-bg, 2%);
+    }
+
+  &__header {
+    padding:  $global-baseline / 2
+              $global-baseline * 3/2;
+
+    font-weight: 600;
+    font-size: 12px;
+
+    text-transform: uppercase;
+    color: darken($color-tx-muted, 10%);
+  }
+}
+
+.st-order {
+  // ...
+
+  &__info {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E2E2E2;
+  }
+    &__info--expanded {
+      padding-bottom: $global-baseline * 3/2 - 1px;
+
+      border-bottom: 1px solid #E2E2E2;
+    }
+
+  &__details {
+    padding-top: $global-baseline;
+    padding-bottom: $global-baseline;
+    overflow: hidden;
+
+    border-bottom: 1px solid #E2E2E2;
+  }
+}
+
+.st-deployment {
+  //
+  &__info {
+    //
+  }
+  &__avatar {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: $global-baseline / 2;
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  }
+  &__label {
+    width: 70%;
+    text-align: center;
+  }
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: $global-baseline * 2;
+  }
+  &__button {
+    width: 100%;
+    &-check {
+      display: inline-block;
+      width: $global-baseline * 3;
+      height: $global-baseline * 3;
+      background-size: $global-baseline * 3;
+    }
+  }
+}

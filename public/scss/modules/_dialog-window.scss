@@ -1,0 +1,110 @@
+/**
+ *  DIALOG WINDOW MODULE
+ *
+ *  complementary window with header, body, and footer: popups and modal windows
+ *
+ *  .dialog-window
+ *    <>--  .dw-header
+ *            &__title
+ *    <>--  .dw-body
+ *            &__block
+ *            &--fixed
+ *            &--small
+ *    &__footer
+ *    &--small
+ *
+ */
+$dialog-window-border: 1px solid rgba(black, 0.15);
+$dialog-window-border-radius: $global-border-radius;
+
+.dialog-window {
+  width: $global-baseline * 60 + $global-baseline * 4;
+
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+
+  color: $color-tx;
+  background: white;
+  border: $dialog-window-border;
+  border-radius: $dialog-window-border-radius;
+  box-shadow: 0 1px 3px rgba(black, 0.2);
+
+  &__footer {
+    padding:  ($global-baseline * 3/2 - 1px)
+              ($global-baseline * 3/2 - 1px)
+              ($global-baseline * 3/2)
+              ($global-baseline * 3/2 - 1px);
+
+    border-top: $dialog-window-border;
+    border-bottom-left-radius: $dialog-window-border-radius;
+    border-bottom-right-radius: $dialog-window-border-radius;
+    background: lighten($color-bg, 5%);
+    @include background( linear-gradient( darken($color-bg, 1%), darken($color-bg, 5%) ) );
+    box-shadow: inset 0 1px 0 rgba(white, 0.57);
+  }
+    &__footer--compact {
+      padding:  ($global-baseline - 1px)
+                ($global-baseline - 1px)
+                ($global-baseline)
+                ($global-baseline - 1px);
+    }
+}
+  .dialog-window--medium {
+    width: $global-baseline * 44 + $global-baseline * 2;
+  }
+  .dialog-window--small {
+    width: $global-baseline * 24 + $global-baseline * 2;
+  }
+
+.dw-header {
+  padding:  ($global-baseline * 3/2)
+            ($global-baseline * 3/2 - 1px)
+            ($global-baseline * 3/2 - 1px)
+            ($global-baseline * 3/2 - 1px);
+
+  border-bottom: $dialog-window-border;
+  border-top-left-radius: $dialog-window-border-radius;
+  border-top-right-radius: $dialog-window-border-radius;
+
+  &__title {
+    font-weight: 600;
+  }
+}
+
+.dw-body {
+  // nothing here for now...
+
+  &__block {
+    padding:  $global-baseline * 2
+              ($global-baseline * 3 - 1px);
+
+    & + & {
+      border-top: $dialog-window-border;
+      padding-top: $global-baseline * 2 - 1px;
+    }
+  }
+    &__block--compact {
+      padding:  $global-baseline
+                ($global-baseline * 3/2 - 1px);
+
+      & + & {
+        border-top: $dialog-window-border;
+        padding-top: $global-baseline - 1px;
+      }
+    }
+
+  &--fixed {
+    max-height: 25*$global-baseline - 2px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+  // .dw-body--small {
+  //   padding:  $global-baseline
+  //             ($global-baseline - 1px);
+
+  //   & + & {
+  //     padding-top: $global-baseline - 1px;
+  //   }
+  // }

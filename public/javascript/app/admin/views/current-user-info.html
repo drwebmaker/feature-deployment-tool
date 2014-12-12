@@ -1,0 +1,34 @@
+<div class="new-positioning-grid">
+  <button class="current-user ph-menu__item"
+          ng-class="{'is-active': isPopupVisible('current-user-info')}"
+          popup-toggler="current-user-info">
+    <span class="current-user__name">{{currentUser.name}}</span>
+    <img ng-src="{{currentUser.avatar || '/images/default-avatar.jpg'}}" ng-alt="{{currentUser.name}}" class="current-user__avatar">
+  </button>
+
+  <aside class="popover popover--pivot-right" ng-show="isPopupVisible('current-user-info')" popup-window="current-user-info">
+    <div class="dialog-window dialog-window--small">
+      <div class="dw-header">
+        <h1 class="dw-header__title">You are logged in as</h1>
+      </div>
+
+      <div class="dw-body">
+        <div class="dw-body__block">
+          <div class="current-user-popover">
+            <div class="l-block">
+              <img ng-src="{{currentUser.avatar || '/images/default-avatar.jpg'}}" ng-alt="{{currentUser.name}}" class="current-user__avatar">
+            </div>
+            <span class="current-user__name">{{currentUser.name}}</span>
+            <span class="current-user-popover__email">{{currentUser.email}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialog-window__footer dialog-window__footer--compact">
+        <div class="l-split">
+          <div class="l-split__right"><button class="button button--secondary" ng-click="signOut()">Sign out</button></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>

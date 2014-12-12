@@ -1,0 +1,56 @@
+/**
+ *  INPUT DECORATOR MODULE
+ *
+ *  decorations for standard inputs: prefixes/postfixes, labels etc.
+ *
+ *  .input-decorator
+ *    &__label
+ *      &--inline
+ *    &__feedback
+ *      &--positive
+ *    &__description
+ *      &--error
+ *
+ */
+ @mixin animation-fade {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+@-webkit-keyframes animation-fade { @include animation-fade; }
+   @-moz-keyframes animation-fade { @include animation-fade; }
+        @keyframes animation-fade { @include animation-fade; }
+
+
+.input-decorator {
+  display: block;
+
+  &__label {
+    font-weight: 600;
+  }
+    &__label--inline {
+      padding-top: $global-baseline / 2;
+    }
+
+  &__feedback {
+    @include animation-duration(0.5s);
+    @include animation-name(animation-fade);
+    @include animation-fill-mode(forwards);
+    @include animation-timing-function(linear);
+
+    font-size: 12px;
+  }
+    &__feedback--positive {
+      color: $color-dc-primary;
+    }
+
+  &__description {
+    font-size: 13px;
+    font-weight: 300;
+
+    color: $color-tx-muted;
+  }
+    &__description--error {
+      color: $color-dc-secondary;
+    }
+}

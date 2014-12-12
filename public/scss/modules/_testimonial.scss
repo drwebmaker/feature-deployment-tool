@@ -1,0 +1,38 @@
+/**
+ *  TESTIMONIAL MODULE
+ *
+ *  styling for testimonials from users
+ *
+ *  .testimonial
+ *    &__quote
+ *    <>--  .tm-user
+ *            &__avatar
+ *            &__name
+ *
+ */
+
+.testimonial {
+  padding-bottom: $global-baseline * 2;
+  box-shadow: 0 1px 2px rgba(black, 0.15);
+  text-align: left;
+
+  &__quote {
+
+    color: #535353;
+  }
+}
+
+.tm-user {
+
+  &__avatar {
+    display: block;
+    width: $global-baseline * 3;
+    height: $global-baseline * 3;
+
+    border-radius: 50%;
+  }
+
+  &__name {
+
+  }
+}

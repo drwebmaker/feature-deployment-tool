@@ -1,0 +1,63 @@
+/**
+ *  TAG TABS MODULE
+ *
+ *  list of tags with options to create new tag and go to open tag manger
+ *
+ *  .tag-tabs
+ *    <>--  .tt-tag
+ *            &__title
+ *            &__size
+ *            &--new
+ *            &--selected
+ *
+ */
+
+.tag-tabs {
+  @extend %cf;
+
+  position: relative;
+}
+
+.tt-tag {
+  display: inline-block;
+  padding: (($global-baseline/2) - 2px) $global-baseline;
+
+  border: 2px solid #E7E7E7;
+  border-radius: $global-border-radius;
+  outline: none;
+
+  &__title {
+    // nothing here for now...
+  }
+
+  &__size {
+    font-weight: 300;
+    color: $color-tx-muted;
+  }
+}
+
+  .tt-tag--selected {
+    $tag-selected-color: #96A3A0;
+
+    text-shadow: 0 -1px 0 rgba(black, 0.17);
+
+    background: $tag-selected-color;
+    border-style: solid;
+    border-color: darken($tag-selected-color, 5%);
+
+    .tt-tag__title {
+      color: white;
+    }
+
+    .tt-tag__size {
+      color: mix($tag-selected-color, white);
+    }
+  }
+  .tt-tag--new {
+    border-style: dashed;
+    border-color: darken(#E7E7E7, 10%);
+
+    .tt-tag__title {
+      color: $color-tx-muted;
+    }
+  }

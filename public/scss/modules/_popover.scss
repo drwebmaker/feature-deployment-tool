@@ -1,0 +1,50 @@
+/**
+ *  POPOVER MODULE
+ *
+ *  provides popover placement with customizable pivot and arrow
+ *
+ *  .popover
+ *    &--pivot-left
+ *    &--pivot-right
+ *
+ */
+$popover-arrow-size: $global-baseline;
+
+$popover-bg: white;
+$popover-border: 1px solid rgba(black, 0.15);
+$popover-box-shadow: 0 1px 3px rgba(black, 0.2);
+$popover-box-shadow-fix: 3px;
+
+.popover {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+
+  margin-top: $global-baseline;
+}
+  .popover--pivot-left {
+    left: $global-baseline;
+
+    &:before {
+      @include top-arrow( $popover-arrow-size, $popover-bg, 'left', $global-baseline * 2 );
+      box-shadow: $popover-box-shadow;
+      border: $popover-border;
+    }
+
+    &:after {
+      @include top-arrow-fix( $popover-arrow-size, $popover-box-shadow-fix, $popover-bg, 'left', $global-baseline * 2 );
+    }
+  }
+  .popover--pivot-right {
+    right: $global-baseline;
+
+    &:before {
+      @include top-arrow( $popover-arrow-size, $popover-bg, 'right', $global-baseline * 2 );
+      box-shadow: $popover-box-shadow;
+      border: $popover-border;
+    }
+
+    &:after {
+      @include top-arrow-fix( $popover-arrow-size, $popover-box-shadow-fix, $popover-bg, 'right', $global-baseline * 2 );
+    }
+  }

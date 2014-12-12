@@ -1,0 +1,70 @@
+/**
+ *  ACTIONS MODULE
+ *
+ *  contains styling for actions
+ *
+ *  .action
+ *    &--muted
+ *    &--dangerous
+ *    &--button
+ *
+ */
+.action {
+  display: inline-block;
+  padding: 0;
+
+  font-size: $global-font-size;
+  font-weight: 300;
+  line-height: $global-baseline * 2;
+
+  color: $color-dc-primary;
+  text-decoration: underline;
+
+  &:hover {
+    color: darken($color-dc-primary, 10%);
+    text-decoration: none;
+  }
+
+  &:disabled {
+    color: lighten($color-tx-muted, 15%);
+    text-decoration: underline;
+  }
+}
+  .action--muted {
+    color: $color-tx-muted;
+
+    &:hover {
+      color: darken($color-tx-muted, 10%);
+    }
+  }
+  .action--dangerous {
+    color: $color-dc-secondary;
+
+    &:hover {
+      color: darken($color-dc-secondary, 10%);
+    }
+  }
+  .action--button {
+    padding: $global-baseline/2 $global-baseline;
+
+    &:disabled {
+      text-decoration: none;
+      color: $color-tx-muted;
+
+      &:hover {
+        color: $color-tx-muted;
+      }
+    }
+  }
+
+.down-action {
+  overflow-y: hidden;
+  max-height: 0;
+
+  @include transition-property(max-height);
+  @include transition-duration(.5s);
+
+  &.open {
+    max-height: 60px;
+  }
+}

@@ -1,0 +1,41 @@
+/**
+ *  STAT LIST MODULE
+ *
+ *  styling for showing stats: stat name + number
+ *
+ *  .stat-list
+ *    <>--  .sl-item
+ *            &__name
+ *            &__value
+ *            &--last
+ *
+ */
+.stat-list {
+  border: 1px solid #ccc;
+  border-radius: $global-border-radius;
+}
+
+.sl-item {
+  padding: $global-baseline 0;
+
+  text-align: center;
+
+  border-right: 1px solid #ccc;
+
+  &__name {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    color: $color-tx-muted;
+  }
+
+  &__value {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: $global-baseline * 3;
+  }
+}
+  .sl-item--last {
+    border-right: none;
+  }

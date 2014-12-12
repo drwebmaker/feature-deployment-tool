@@ -1,0 +1,11 @@
+<div class="selectifier-item-course">
+  <div class="l-list l-list--inline">
+    <div class="l-list__item is-middle-aligned">
+      <img ng-src="{{item.value.image}}" alt="{{item.value.name}}" class="selectifier-item-course__thumb">
+    </div>
+
+    <div class="l-list__item is-middle-aligned">
+      <div class="selectifier-item__name">{{item.value.name | truncate:30:'…'}}</div>
+    </div>
+  </div>
+</div>

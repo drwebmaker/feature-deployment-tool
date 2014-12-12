@@ -1,0 +1,201 @@
+/**
+ *  MULTISELECT OPTION MODULE
+ *
+ *  entries in multiselect table
+ *
+ *  .multiselect-option
+ *    <>--  .mo-tag
+ *            &__title
+ *            &__remove
+ *    <>--  .mo-tag-dummy
+ *
+ *  <---  .multiselect-option-user
+ *          &__name
+ *          &__email
+ *          &__avatar
+ *
+ *  <---  .multiselect-option-course
+ *          &__title
+ *          &__price
+ *          <>--  .moc-thumb
+ *                  &__image
+ *          <>--  .moc-status
+ *                  &__text
+ *          <>--  .moc-instructor
+ *                  &__avatar
+ *                  &__name
+ *
+ *  <---  .multiselect-option-request
+ *
+ *  <---  .multiselect-option-academy
+ *
+ */
+.multiselect-option {
+  // nothing here for now...
+}
+
+.mo-tag {
+  padding: 0 $global-baseline;
+
+  border-radius: $global-border-radius/2;
+  background: $color-dc-tertiary;
+
+  &__title {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(black, 0.1);
+  }
+
+  &__remove {
+    margin-right: - $global-baseline/2;
+    outline-color: white;
+  }
+}
+
+.mo-tag-dummy {
+  font-weight: 100;
+  font-style: italic;
+
+  color: lighten($color-tx-muted, 25%);
+}
+
+
+.multiselect-option-user {
+  // @extend .multiselect-option
+
+  &__name {
+    display: block;
+
+    font-weight: 400;
+  }
+
+  &__email {
+    display: block;
+
+    font-weight: 300;
+
+    color: $color-tx-muted;
+  }
+
+  &__avatar {
+    display: block;
+    width: $global-baseline * 4;
+    height: $global-baseline * 4;
+    margin-right: $global-baseline;
+
+    border: 1px solid darken($color-bg, 8%);
+    border-radius: 50%;
+  }
+
+  &__subscription {
+    display: block;
+    cursor: help;
+
+    &--positive {
+      color: $color-dc-primary;
+    }
+
+    &--negative {
+      color: $color-dc-secondary;
+    }
+  }
+}
+
+
+.multiselect-option-course {
+  // @extend .multiselect-option
+
+  &__title {
+    display: block;
+
+    // font-size: 15px;
+    font-weight: 400;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.moc-thumb {
+  display: block;
+  width: $global-baseline * 8;
+  height: $global-baseline * 8;
+  margin-right: $global-baseline;
+
+  border: 1px solid darken($color-bg, 8%);
+  border-radius: $global-baseline/4;
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border-radius: $global-baseline/4;
+  }
+}
+
+.moc-status {
+  @extend %center;
+  width: 100%; height: 100%;
+
+  background: white;
+  background: rgba(white, 0.9);
+
+  text-align: center;
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: $color-dc-secondary;
+  }
+}
+
+.moc-instructor {
+  // nothing here for now...
+
+  &__avatar {
+    display: inline-block;
+    vertical-align: top;
+
+    width: $global-baseline*2;
+    height: $global-baseline*2;
+
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(black, 0.5);
+  }
+
+  &__name {
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: $global-baseline;
+    margin-left: $global-baseline/2;
+
+    font-size: 13px;
+    color: $color-tx-muted;
+  }
+}
+
+
+.multiselect-option-request {
+  // @extend .multiselect-option
+}
+
+.multiselect-option-academy {
+  //
+  &__subdomain {
+    display: block;
+
+    font-weight: 300;
+
+    color: $color-tx-muted;
+  }
+}

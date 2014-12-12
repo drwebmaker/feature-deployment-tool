@@ -1,0 +1,40 @@
+<div class="new-positioning-grid">
+  <button class="ph-menu__item icon-bell"
+          ng-class="{ 'is-active': isPopupVisible('notifications') }"
+          popup-toggler="notifications">
+    <small class="icon-bell__counter" ng-show="academyNotifications.length">{{academyNotifications.length}}</small>
+  </button>
+
+  <aside class="popover popover--pivot-right" popup-window="notifications" ng-show="isPopupVisible('notifications')">
+    <div class="dialog-window dialog-window--small">
+      <div class="dw-header">
+        <h1 class="dw-header__title">Notifications</h1>
+      </div>
+
+      <div class="dw-body dw-body--fixed">
+        <div class="dw-body__block dw-body__block--compact" ng-hide="academyNotifications.length">
+          <div class="object-notification-empty">
+            <div class="object-notification-empty__icon icon-checkmark"></div>
+            <div class="object-notification__body">No new notifications</div>
+          </div>
+        </div>
+
+        <div ng-show="academyNotifications.length">
+          <div class="dw-body__block dw-body__block--compact" ng-repeat="notification in academyNotifications">
+            <div class="object-notification">
+              <div class="l-block-small object-notification__body content-area" ng-bind-html="notification.body | html"></div>
+              <div class="l-split">
+                <div class="l-split__right"><button class="action action--muted" ng-click="dismissNotification($index)">Dismiss</button></div>
+                <div class="l-split__left"><div class="object-notification__timestamp">{{notification.createdAt | fromNow}}</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialog-window__footer dialog-window__footer--compact is-right-aligned">
+        <button class="button button--secondary" ng-click="dismissAllNotifications()" ng-disabled="academyNotifications.length == 0">Dismiss all</button>
+      </div>
+    </div>
+  </aside>
+</div>
